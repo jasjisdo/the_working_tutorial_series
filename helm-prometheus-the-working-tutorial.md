@@ -112,6 +112,28 @@ login with user: `admin` and password: `prom-operator`
 
 ---
 
+## Clean up kubernetes environment back to clean and fresh state
+
+Stop port forwarding for grafana
+
+```
+fg
+```
+
+Press `CTRL+C` to stop grafana port forwarding
+
+![2022-03-12_12h09_12](https://user-images.githubusercontent.com/5826641/158015664-dc8fddd3-32ed-4656-8dee-3b8e65efff8e.png)
+
+Stop port forwarding for prometheus
+
+```
+fg
+```
+
+Press `CTRL+C` to stop prometheus port forwarding
+
+![2022-03-12_12h12_25](https://user-images.githubusercontent.com/5826641/158015750-66f73655-8c28-4e25-87fb-9598e02c3fec.png)
+
 Uninstall helm chart `community/kube-prometheus-stack` with release `prometheus`
 
 ```
