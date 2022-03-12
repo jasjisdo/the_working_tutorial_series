@@ -134,8 +134,25 @@ Press `CTRL+C` to stop prometheus port forwarding
 
 ![2022-03-12_12h12_25](https://user-images.githubusercontent.com/5826641/158015750-66f73655-8c28-4e25-87fb-9598e02c3fec.png)
 
-Uninstall helm chart `community/kube-prometheus-stack` with release `prometheus`
+Uninstall helm chart `community/kube-prometheus-stack` with release `stable` and verify that the helm chart is uninstalled
 
 ```
 helm uninstall stable
+helm ls
 ```
+
+expected output:
+
+![2022-03-12_12h15_05](https://user-images.githubusercontent.com/5826641/158015864-d8b31dcf-6e75-42df-ac11-151bbb2cccc5.png)
+
+Remove helm repo `community-prometheus` and verify that it is removed
+
+```
+helm repo remove prometheus-community
+helm repo ls 
+```
+
+expected output:
+
+![2022-03-12_12h20_55](https://user-images.githubusercontent.com/5826641/158016069-9f5c86b5-15c8-4cbd-80ae-a1562abff272.png)
+
