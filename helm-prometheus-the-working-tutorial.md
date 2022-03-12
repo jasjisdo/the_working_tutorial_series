@@ -5,7 +5,7 @@ Starting with a clean and fresh kubernetes environment.
 Get kubernetes pod status to verify that current kubernetes environment is fresh and clean.
 
 ```
-$ kubectl get pod
+kubectl get pod
 ```
 expected output:
 
