@@ -156,3 +156,23 @@ expected output:
 
 ![2022-03-12_12h20_55](https://user-images.githubusercontent.com/5826641/158016069-9f5c86b5-15c8-4cbd-80ae-a1562abff272.png)
 
+Remove helm repo `elastic` and verify that it is removed
+
+```
+helm repo remove elastic
+helm repo ls 
+```
+
+expected output:
+
+![2022-03-12_12h25_48](https://user-images.githubusercontent.com/5826641/158016209-c3e47649-0020-46f3-b6a2-389fb7419d31.png)
+
+Verify that pods are removed
+
+```
+kubectl get pods
+```
+
+expected output:
+
+![2022-03-12_12h27_08](https://user-images.githubusercontent.com/5826641/158016238-d150bfbe-180d-430e-971d-bf2545a9842e.png)
