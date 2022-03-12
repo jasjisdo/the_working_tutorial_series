@@ -52,7 +52,7 @@ expected output (*Please note that some results may differ as they are randomly 
 
 ![2022-03-12_11h28_56](https://user-images.githubusercontent.com/5826641/158014404-f65e61fe-3da6-4784-a011-9ed11eee639d.png)
 
-Set portwarding for prometheus pod and run it in background
+Set port forwarding for prometheus pod and run it in background
 
 ```
 kubectl --namespace default port-forward prometheus-stable-kube-prometheus-sta-prometheus-0 9090 &
@@ -79,10 +79,11 @@ expected output:
 
 ![2022-03-12_11h40_48](https://user-images.githubusercontent.com/5826641/158014814-a139b657-c7b7-48ed-b05e-2b940e3295bd.png)
 
-Set portwarding for grafana pod by using the bash variable `$GRAFANA_POD` and run it in background.
+Set port forwarding for grafana pod by using the bash variable `$GRAFANA_POD` and run it in background.
 
 ```
 kubectl --namespace default port-forward $GRAFANA_POD 3000 &
+bg
 ```
 
 expected output:
