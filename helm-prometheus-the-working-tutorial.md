@@ -145,7 +145,7 @@ expected output:
 
 ![2022-03-12_12h15_05](https://user-images.githubusercontent.com/5826641/158015864-d8b31dcf-6e75-42df-ac11-151bbb2cccc5.png)
 
-Remove helm repo `community-prometheus` and verify that it is removed
+Remove helm repo `prometheus-community` and verify that it is removed
 
 ```
 helm repo remove prometheus-community
