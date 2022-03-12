@@ -167,7 +167,7 @@ expected output:
 
 ![2022-03-12_12h25_48](https://user-images.githubusercontent.com/5826641/158016209-c3e47649-0020-46f3-b6a2-389fb7419d31.png)
 
-Verify that pods are removed
+Verify that pods are removed current kubernetes environment is fresh and clean again.
 
 ```
 kubectl get pods
